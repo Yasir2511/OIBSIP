@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+
+}
+
+
+
+.folio {
+  color: #ff0075;
+}
+
+
+
+#aboutme {
+  background-color: #1F1717;
+  padding-bottom:50px;
+}
+.qualification{
+  font-size:1.75rem;
+  font-weight: 500;
+}
+.qua{
+  font-size:2rem;
+  font-weight: 700;
+  color:#f0f;
+}
+.degree {
+  color: #0ef;
+}
+
+.box{
+ 
+  height:4px;
+  margin-top:40px;
+ background-color:#AEDEFC;
+ display:flex;
+}
+.vertical{
+  position: absolute;
+ top:55px;
+  left:-9px;
+
+}
+.details{
+  background-color:#AEDEFC;
+  height:60px;
+  width:2px;
+  margin:0 13vw;
+  position: relative;
+  
+}
+.data{
+  color:#0ef;
+  font-size:1.5rem;
+  font-weight: 500;
+}
+#education{
+  background-color: #1F1717;
+  padding:100px 5vw;
+  color:white;
+  height:100vh;
+}
+.aboutme {
+  padding-bottom: 50px;
+  font-weight: 800;
+  color: #f0f
+
+}
+#contact{
+  padding:50px ;
+  background-color: #1F1717;
+}
+.call{
+  padding-left:3vw;
+  font-size:1.5rem;
+  font-weight:700;
+  color:#0ef;
+  padding-top:50px;
+}
+.msg{
+  padding-left:3vw;
+ 
+}
+.mail{
+  padding-left:3.75vw;
+  font-size:1.5rem;
+  font-weight:700;
+  color:#0ef;
+  
+}
+.contact{
+  padding-bottom:50px;
+  font-weight:800;
+  color:#f0f;
+}
+
+.info{
+  padding-left:6vw;
+
+  padding-top:20px;
+  font-size:1.2rem;
+  padding-bottom:50px;
+  font-weight: 600;
+  color:white;
+}
+.location{
+  font-size:1.5rem;
+  font-weight:700;
+  color:#0ef;
+  padding-left:3.8vw;
+}
+label{
+  color:#0ef;
+  font-size:1.5rem;
+  font-weight: 700;
+ margin-bottom:20px ;
+ 
+  cursor:pointer
+}
+#name{
+  margin-bottom:20px;
+}
+
+.btn{
+  margin-top:50px;
+  cursor:pointer;
+  padding:10px 5px;
+  border-radius:50px;
+  width:90%;
+ 
+  
+}
+input{
+  margin-bottom:15px;
+  padding:8px 15px;
+  width:90%;
+  border:none;
+  outline: none;
+  border-radius:100px;
+}
+.number{
+  padding-left:3vw;
+  font-size:1.25rem;
+}
+.container {
+  padding-top: 70px;
+  color: white;
+font-weight: 500;
+
+}
+
+.front {
+  color: #0ef;
+}
+
+.para {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+nav .container-fluid .navbar-brand {
+  font-size: 2rem;
+  padding-left: 90px;
+  color: white;
+
+}
+nav .container-fluid img {
+  height: 200px;
+  width: 200px;
+
+}
+
+nav {
+  padding: 20px 50px;
+  background-color: #1F1717;
+  display: flex;
+  justify-content: center;
+}
+
+nav .container-fluid ul li {
+  padding: 10px;
+  font-size: 1.1rem;
+  position: relative;
+  font-weight: 600;
+
+}
+
+nav .container-fluid ul li a::after {
+  content: "";
+  opacity: 0;
+  border-bottom: 3px solid #AEDEFC;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+
+}
+
+nav .container-fluid ul li a {
+  color: white;
+}
+
+nav .container-fluid ul li a:hover {
+  color: #0ef;
+}
+
+nav .container-fluid ul li a:hover::after {
+  opacity: 1;
+
+}
+
+.about {
+  padding-top: 70px;
+
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: white;
+  line-height: 1.5;
+
+}
+
+.dev {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #f0f;
+}
+
+.name {
+  font-weight: 800;
+  color: #0ef;
+  font-size: 2.75rem;
+}
+
+#about {
+  background-color: #1F1717;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* aligns image to top */
+  flex-wrap: wrap;
+}
+
+.myimage {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #0ef,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ef;
+  margin-top: 0; /* remove excess margin */
+}
+.nav-profile {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 10px;
+  box-shadow: 0 0 15px #0ef;
+}
