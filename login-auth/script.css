@@ -1,0 +1,58 @@
+function register() {
+  const username = document.getElementById("regUsername").value;
+  const password = document.getElementById("regPassword").value;
+
+  if (!username || !password) {
+     alert("Please fill both fields.");
+     return;
+}
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+  const userExists = users.some(user => user.username === username);
+   if (userExists) {
+       alert("Username already exists. Please choose another.");
+    return;
+  }
+
+  users.push({
+      username: username,
+    password: btoa(password) 
+  });
+   localStorage.setItem("users", JSON.stringify(users));
+   
+
+
+  alert("Registration successful!");
+  document.getElementById("regUsername").value = "";
+   document.getElementById("regPassword").value = "";}
+function login() {
+  const username = document.getElementById("loginUsername").value;
+  const password = document.getElementById("loginPassword").value;
+ 
+
+if (!username || !password) {
+     alert("Please fill both fields.");
+      return;
+  }
+
+     let users = JSON.parse(localStorage.getItem("users")) || [];
+  const matchedUser = users.find(user =>
+     user.username === username && atob(user.password) === password
+  );
+  if (matchedUser) {
+     document.getElementById("loginForm").classList.add("hidden");
+      document.getElementById("registerForm").classList.add("hidden");
+    document.getElementById("securePage").classList.remove("hidden");
+  } else {
+      alert("Invalid credentials. Please try again.");
+  }
+
+    document.getElementById("loginUsername").value = "";
+  document.getElementById("loginPassword").value = "";
+}
+
+function logout() {
+  document.getElementById("securePage").classList.add("hidden");
+    document.getElementById("registerForm").classList.remove("hidden");
+  document.getElementById("loginForm").classList.remove("hidden");
+}
